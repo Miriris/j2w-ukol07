@@ -10,11 +10,11 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 <body>
-<div class="detail">
-    <form class="vizitka">
+<div class="detail" >
+    <form class="vizitka" th:action="@{/nova}" method="post">
         <div class="row">
             <label for="jmeno">Jméno</label>
-            <input type="text" id="jmeno" name="jmeno" maxlength="100" required />
+            <input type="text" id="jmeno" name="celeJmeno" maxlength="100" required />
         </div>
         <div class="row">
             <label for="firma">Firma</label>
@@ -42,7 +42,7 @@
         </div>
         <div class="row">
             <label for="web">Web <small>(volitelný)</small></label>
-            <input type="url" id="web" name="web" maxlength="100"  />
+            <input type="text" id="web" name="web" maxlength="100"  />
         </div>
         <div class="form-controls">
             <button type="submit">Odeslat</button>
